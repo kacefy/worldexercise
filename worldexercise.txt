@@ -1,0 +1,17 @@
+mysql -u root -p
+
+SOURCE C:\Users\ciarra.balsomo\Desktop\world.sql
+SHOW TABLES;
+
+1. 
+SELECT COUNT(*) AS "Number of cities in the USA" FROM city WHERE countrycode = 'USA';
+
+2.
+SELECT lifeexpectancy, population FROM city WHERE countrycode='ARG'
+
+
+3.
+SELECT name FROM country WHERE lifeexpectancy IS NOT NULL ORDER BY lifeexpectancy DESC LIMIT 1;
+
+6.
+SELECT name FROM country WHERE name LIKE 'F%' LIMIT 25;
